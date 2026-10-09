@@ -14,6 +14,7 @@ import {
   FiMenu,
   FiX,
   FiLock,
+  FiDownload,
 } from "react-icons/fi";
 import { logout } from "../lib/api";
 
@@ -80,6 +81,22 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <span>Admin</span>
         </Link>
       )}
+
+      <a
+        href="/DigitalSignature_Defense_Presentation.pdf"
+        download="DigitalSignature_Defense_Presentation.pdf"
+        className="sidebar-link"
+        style={{
+          marginTop: 10,
+          color: "#38BDF8",
+          background: "rgba(56, 189, 248, 0.08)",
+          border: "1px solid rgba(56, 189, 248, 0.25)",
+        }}
+        onClick={() => setMobileOpen(false)}
+      >
+        <FiDownload size={17} className="shrink-0" />
+        <span>Defense Slides (PDF)</span>
+      </a>
     </nav>
   );
 
