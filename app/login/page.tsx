@@ -230,23 +230,6 @@ export default function Login() {
             </Link>
           </p>
 
-          {/* Demo credentials hint */}
-          <div style={{
-            marginTop: 28,
-            background: "var(--surface)",
-            border: "1px solid var(--border)",
-            borderRadius: 12,
-            padding: "14px 16px",
-            fontSize: 13,
-          }}>
-            <div style={{ fontWeight: 700, color: "var(--ink-2)", marginBottom: 8, fontSize: 12, textTransform: "uppercase", letterSpacing: "0.06em" }}>
-              Demo admin credentials
-            </div>
-            <div style={{ color: "var(--ink-3)", display: "flex", flexDirection: "column", gap: 4 }}>
-              <span>📧 <code style={{ fontFamily: "'JetBrains Mono', monospace" }}>admin@example.com</code></span>
-              <span>🔑 <code style={{ fontFamily: "'JetBrains Mono', monospace" }}>Admin12345!</code></span>
-            </div>
-          </div>
         </div>
       </main>
     </div>
